@@ -22,4 +22,4 @@
     - git push origin "nome da branch" -> faz o envio da minha branch ao repositorio remoto
     - git pull origin master -> Traz todo o reposótio para minha máquina
     - git fetch -> Sincroniza todas as alterações remotas para o meu repositório local
-    
+    - git
