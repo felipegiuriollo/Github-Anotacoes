@@ -49,47 +49,61 @@ ________________________________________________________________________________
     - git init: Inicializa um novo repositório Git vazio no diretório atual. Este comando cria uma nova pasta .git onde o Git armazenará todos os arquivos de configuração e histórico do repositório.
         - Uso: git init
 
+
     - git add .: Adiciona todos os arquivos e alterações no diretório atual ao "staging area" (área de preparação). Esses arquivos estão prontos para serem incluídos no próximo commit.
         - Uso: git add . -> Podendo também selecionar arquivos individualmente, como por exemplo git add "Commit_16_09_2024"
+
 
     - git commit -m "mensagem": Cria um commit, que é um ponto de verificação no histórico do repositório. A mensagem entre aspas deve descrever a mudança realizada no commit.
         - Uso: git commit -m "Descrição das mudanças"
 
+
     - git status: Exibe o status dos arquivos no repositório, incluindo arquivos modificados, não rastreados e prontos para o commit. Ajuda a entender quais mudanças estão por fazer o commit.
         - Uso : git status
+
 
     - git log: Mostra o histórico de commits do repositório, incluindo informações como o ID do commit, autor, data e a mensagem do commit. Pode ser usado para revisar o histórico de mudanças.
         - Uso: git log
 
+
     - git diff: Exibe as diferenças entre as versões dos arquivos no diretório de trabalho e a última versão commitada. Útil para ver quais mudanças foram feitas antes de um commit.
         - Uso: git diff
 
+
     - git restore <nome_arquivo>: Restaura um arquivo do diretório de trabalho para o estado do último commit. Esse comando desfaz mudanças não commitadas no arquivo especificado.
         - Uso: git restore <nome_arquivo>
+
     
     - git checkout -b <nome_da_branch>: Cria uma nova branch com o nome especificado e muda imediatamente para essa branch. Ideal para iniciar um novo ramo de desenvolvimento.
         - Uso: git checkout -b <nome_da_branch>
 
+
     - git branch: Lista todas as branches locais no repositório e indica a branch atualmente ativa (com um asterisco). Também pode ser usado para criar novas branches com a opção -b.
         - Uso: git bbranch
+
 
     - git checkout <nome_branch>: Muda para a branch especificada. Esse comando permite alternar entre diferentes ramos de desenvolvimento.
         - Uso: git checkout <nome_branch>
 
+
     - git merge <nome_branch>: Mescla as alterações da branch especificada na branch atualmente ativa. Normalmente usado para integrar alterações de uma branch de desenvolvimento (como uma feature branch) na branch principal (main ou master).
         - Uso: git merge <nome_branch>
 
+
     - git remote add origin <URL_repositorio>: Adiciona um repositório remoto com o nome origin e a URL fornecida. Usado para associar o repositório local a um repositório remoto, geralmente hospedado em serviços como GitHub, GitLab, ou Bitbucket.
-        Uso: git remote add origin <URL_repositorio>
+        - Uso: git remote add origin <URL_repositorio>
+
 
     - git push origin <nome_branch>: Envia as mudanças da branch local para a branch correspondente no repositório remoto. Esse comando é usado para compartilhar suas alterações com outros colaboradores.
-        Uso: git push origin <nome_branch>
+        - Uso: git push origin <nome_branch>
+
 
     - git pull origin master: Baixa e integra as alterações da branch master no repositório remoto para a branch local atual. Isso sincroniza seu repositório local com o repositório remoto.
-        Uso: git pull origin master
+        - Uso: git pull origin master
+
 
     - git fetch: Baixa todas as alterações do repositório remoto, mas não as integra automaticamente à branch local. Usado para atualizar o repositório local com novos commits e branches do remoto sem alterar o estado atual do seu diretório de trabalho.
-        Uso: git fetch
+        - Uso: git fetch
 
 OBS: Esses comandos são fundamentais para trabalhar com Git e GitHub, oferecendo uma ampla gama de funcionalidades para gerenciar o histórico de código e colaborar em projetos.    
 
@@ -117,8 +131,8 @@ Passo a passo para subir ao GITHUB (Não é regra!)
     - git remote add origin "URL do repositório criado no github" -> Adiciona um repositório remoto
     - git push origin "nome da branch" -> Enviando a minha branch ao repositório remoto
 
-Se por acaso você estiver dando o git push origin, e retornar o erro: remote origin already exists.
+- Se por acaso você estiver dando o git push origin, e retornar o erro: remote origin already exists.
     - Significa que você já tem um repositório remoto criado, você pode continuar usando o mesmo ou optar por remover
         - Remover repositório remoto criado: 
          - git remote -v -> Mostra seus repositórios remotos criados
-         - git remove remote 'nome repositório' -> Remmover o repositório remoto criado
+         - git remove remote 'nome repositório' -> Remover o repositório remoto criado
