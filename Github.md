@@ -22,4 +22,12 @@
     - git push origin "nome da branch" -> faz o envio da minha branch ao repositorio remoto
     - git pull origin master -> Traz todo o reposótio para minha máquina
     - git fetch -> Sincroniza todas as alterações remotas para o meu repositório local
-    - git
+    
+
+Passo a passo para subir ao GITHUB (Não é regra!)
+- git init -> Iniciando o git no projeto
+    - git add . -> O ponto significa que ele vai deixar em estado de commit todos os arquivos modificados, mas pode usar o próprio nome do arquivo que você alterou. Ex: Meu arquivo se chama Commit_16_09_2024, pode usar da seguinte forma: git add Commit_16_09_2024
+    - git commit -m '2024_09_16' -> Commita os arquivos no histórico
+    - git remote add origin "URL do repositório criado no github" -> Adiciona um repositório remoto
+    - git push origin "nome da branch" -> Enviando a minha branch ao repositório remoto
+    
