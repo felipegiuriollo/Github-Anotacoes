@@ -1,3 +1,5 @@
+- Documento com intuito de guiar com o manuseio do GITHUB.
+
 - [x] Git
     - Sistema de controle de versão distribuído. É usado para rastrear alterações no código-fonte durante o desenvolvimento de software.
 
